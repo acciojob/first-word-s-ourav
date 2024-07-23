@@ -1,7 +1,7 @@
-wrd
+wrd=[]
 function firstWord(s) {
   // your code here
-	wrd= s.split(' ')[0]
+	wrd= s.split(' ')
 }
 for(w in wrd){
 	if(w!=' ')
@@ -9,5 +9,5 @@ for(w in wrd){
 }
 // Do not change the code below
 
-const s = prompt("Enter String:")
+const s = prompt("Enter String:");
 alert(firstWord(s))
