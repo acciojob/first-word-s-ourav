@@ -1,12 +1,13 @@
 wrd=[]
 function firstWord(s) {
   // your code here
-	wrd= s.split(' ')
+	wrd= s.trim().split(" ")
+	for(w of wrd){
+		if(w!=" ")
+			return w
+	}
 }
-for(w in wrd){
-	if(w!=' ')
-		return w
-}
+
 // Do not change the code below
 
 const s = prompt("Enter String:");
